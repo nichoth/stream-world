@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "lodash": "^4.15.0",
+    "pull-pushable": "^2.0.1",
+    "pull-stream": "^3.4.3",
     "rx": "^4.1.0",
     "rxjs": "^5.0.0-beta.11",
     "xstream": "^5.3.6"

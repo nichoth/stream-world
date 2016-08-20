@@ -32,4 +32,3 @@ total.addListener(loggers)
 
 setTimeout(() => emitters[0].emit('error', 'test'), 1000)
 
-
