@@ -6,8 +6,10 @@ module.exports = function () {
     var total = _.random(20, 50)
 
     function emitProgress (i) {
-        ee.emit('progress', { percent: i, total: total })
-        if (i === 100) return
+        ee.emit('progress', { percent: i + _.random(5), total: total })
+        if (i === 100) {
+            return ee.emit('end', { result: 'this is the end' })
+        }
         setTimeout(emitProgress.bind(null, i+1), _.random(500))
     }
 
