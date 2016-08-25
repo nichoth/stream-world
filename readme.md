@@ -3,15 +3,17 @@
 [tc39 proposal](https://github.com/tc39/proposal-observable)
 
 
-`npm i rx` = rxjs 4  
-`npm i rxjs` = rxjs 5  
-microsoft + version numbers  
-
-
-## rx5
+## rxjs
 The es proposal and a bunch of extra operators
 
-**63kb**
+`npm i rx` = rxjs 4  
+`npm i rxjs` = rxjs 5  
+microsoft + version numbers...  
+
+### rx5
+This is the good one. rx4 is bad now.
+
+**63kb** for Observable + map & combineLatest
 
 * [docs](https://github.com/ReactiveX/rxjs/tree/master/doc)
 * [operators](https://github.com/ReactiveX/rxjs/blob/master/doc/operators.md)
