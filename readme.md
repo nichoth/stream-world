@@ -11,7 +11,7 @@ The es proposal and a bunch of extra operators
 microsoft + version numbers...  
 
 ### rx5
-This is the good one. rx4 is bad now.
+This one is better. rx4 is bad now.
 
 **63kb** for Observable + map & combineLatest
 
@@ -23,3 +23,9 @@ This is the good one. rx4 is bad now.
 Implementation of the es proposal plus a few operators
 
 [zen-observable](https://github.com/zenparsing/zen-observable)
+
+
+## xstream
+
+
+## pull stream
