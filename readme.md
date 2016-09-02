@@ -26,6 +26,6 @@ Implementation of the es proposal plus a few operators
 
 
 ## xstream
-
+**64kb**
 
 ## pull stream

@@ -1,8 +1,11 @@
 var xs = require('xstream').default
-var _ = require('lodash')
 var Emitter = require('./transcoder')
+var util = require('./util')
 
-var emitters = _.times(3, Emitter)
+var emitters = [];
+for (var i = 0; i <= 2; i++) {
+    emitters.push(Emitter());
+}
 
 var loggers = {
     next: console.log.bind(console, 'progress'),
@@ -26,7 +29,7 @@ var progStreams = emitters.map(progStream)
 var latest = xs.combine.apply(xs, progStreams)
 
 // emit sum of all progresses
-var total = latest.map((progs) => _.sum(_.map(progs, 'percent')) / 3)
+var total = latest.map((progs) => util.sum(progs.map(prog => prog.percent)) / 3)
 
 total.addListener(loggers)
 
